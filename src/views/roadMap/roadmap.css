@@ -1,0 +1,106 @@
+
+/* start roadMap-section */
+.roadMap-section {
+    padding:50px 0 30px;
+    background-color: var(--secondary-color);
+  }
+.roadMap-section p { font-weight: 600; text-align: center;}
+.center_col {width: 100%;}
+  
+.left-container {
+  height: 100%;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+}
+.roadMap-section .col-heading {
+  font-weight: 700;
+  font-size: 40px;
+}
+.right-content {
+  padding-left: 100px;
+    text-align: right;
+}
+.roadMap-section .left-content {
+  padding-right: 100px;
+  text-align: justify;
+}
+.top-content, .bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.left-container .top-content {   
+  justify-content: center;
+}
+.left-container .bottom-content {
+  justify-content: flex-start;
+}
+.right-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.right-container .top-content  {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.right-container .bottom-content {     
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Bottom box */
+.bottom-text-container {
+  background: var(--white-color);
+  padding: 25px 60px 25px 25px;
+  width: 66%;
+  margin: 10px auto 0;
+  position: relative;
+}
+.bottom-text-container h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bottom-text-container p {
+  font-weight: 600;
+}
+.future-cat {
+  position: absolute;
+  bottom: 0px;
+  right: -79px; 
+  margin: 0; 
+}
+.future-cat img {width: 160px;}
+
+/* Media */
+@media screen and (min-width: 992px) {
+  .left-container .top-content, .left-container .bottom-content  {
+    position: relative;
+    right: -10px;
+  }
+  .right-container .top-content, .right-container .bottom-content  {
+    position: relative;
+    left: -10px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .left-container .top-content {align-items: center;}
+  .roadMap-section .right-content {text-align: start; padding: unset;}
+  .left-container .bottom-content {align-items: center;}
+  .right-container .top-content {align-items: center;}
+  .left-content{text-align: center; padding: 0; }
+  .right-container .bottom-content{align-items: center;}
+  .bottom-text-container {width:96%; right: -10px; margin: 20px 0 0;}  
+  .future-cat img {width: 90px;}
+}
+
+@media screen and (max-width: 767px) {
+  .mob_none {display: none;}
+  .roadMap-section .left-content {padding-right:0;}
+  .top-content, .bottom-content {padding:10px 0;}
+  .roadMap-section {overflow-x: hidden;}
+  .roadMap-section .left-content, .roadMap-section .right-content {text-align: center;}
+  .future-cat {right: -10px;}
+  .bottom-text-container p {text-align: left;}
+}

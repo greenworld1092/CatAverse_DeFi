@@ -1,0 +1,9 @@
+
+/* start FAQ */
+.faq-section {
+   background: #ffffe6;
+   padding:50px 0;
+}
+.faq-section .accordion-container {
+  width: 100%; 
+}

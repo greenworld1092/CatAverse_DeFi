@@ -1,0 +1,25 @@
+.member-section {
+    padding:50px 0;
+}
+.mem_title p {
+    text-align: left;  
+    color: var(--black-color);
+}
+.member_col {
+    padding:30px;
+    text-align: center;
+}
+.member_col em {
+    display: inline-block;
+    max-width: 160px;
+    margin: 0 0 20px;
+}
+.member_col h6 {
+    color: var(--black-color);
+    line-height: 1;
+    margin: 0 0 15px;
+}
+.member_col p {
+    text-align: center;
+    font-size: 16px;
+}

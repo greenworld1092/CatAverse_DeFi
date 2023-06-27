@@ -1,0 +1,14 @@
+
+/* start about-section */
+.about-section{
+    background-color: #F4F4A1;
+}
+/* About sec 2 */
+.about_sec_2 {background-color: var(--blue-light-color1);}
+.about_sec_2 h2 {margin: 0 0 20px;}
+.about-cat-content {padding:50px;}
+.about-cat-content p {margin-bottom: 20px; color: var(--black-color);}
+
+@media (max-width:767px){
+    .about-cat-content {padding:30px;}
+}

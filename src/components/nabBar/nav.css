@@ -1,0 +1,118 @@
+/* navbar start */
+.nav-bar-container {
+    padding:30px 0;
+    background: #a9beeb;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 111;
+  }
+  .mobile-nav-bar{
+    display: none;
+  }
+  .nav-bar{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+  }
+  .nav-bar .active span{
+    border-bottom: 4px solid var(--black-color);
+  }
+  .nav-bar div span {
+    margin: 0 35px;
+  }
+  .nav-bar div span a {
+    font-size: 22px;
+    font-weight:800;
+    color: #000;
+    padding:0;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  .btn-wallet {
+    background-color: #ee1810;
+    color:  var(--white-color);
+    display: inline-block;
+    position: fixed;
+    right: 40px;
+    padding: 10px 15px;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    height: 54px; 
+    min-width: 150px;
+}
+.btn-wallet:hover {
+    background: #e37558;
+    color: var(--white-color);
+}
+
+  
+ /* Media Css */
+
+@media screen and (max-width: 1200px) {
+  .nav-bar-container {padding:20px 0;}
+  .nav-bar div span {
+    margin: 0 25px;
+  }
+  .nav-bar div span a {font-size: 18px;}
+}
+
+@media screen and (max-width: 996px) {
+    .nav-bar-container {
+        padding:10px 0;
+    }
+    .desktop-nav-bar{
+      display: none;
+    }
+    .nav-bar.mob-nav-bar>div {
+      width: 100%;
+    }
+    .nav-bar.mob-nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: var(--white-color);
+      max-height: calc(100% - 60px);
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: fixed;
+      z-index: 11;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      box-shadow: -8px 9px 18px rgba(0,0,0,0.2);
+    } 
+    .nav-bar div span {
+      margin: 0;
+      display: block;
+    }
+    .nav-bar div span a {
+      padding:20px 0; 
+      display: block;
+      line-height: 40px;
+      border-bottom: 1px solid var(--blue-light-color);
+    }
+    .mobile-nav-bar {
+      font-size: 22px;
+      font-weight: 700;
+      padding:0 15px;
+      text-align: left;
+    }
+    .mobile-nav-bar svg{
+     font-size: 40px;
+     float: right;
+    }
+    .mobile-nav-bar {
+      display:  block;
+      line-height: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 997px) {
+  .mob-nav-bar {
+    display: none;
+  }
+}
